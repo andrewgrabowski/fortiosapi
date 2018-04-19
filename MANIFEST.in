@@ -1,4 +1,0 @@
-include README.md
-include requirements.txt
-include tests/startvm.sh
-include tests/virsh.yaml
