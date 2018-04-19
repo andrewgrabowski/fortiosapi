@@ -4,3 +4,6 @@ pexpect
 pyyaml
 nose
 packaging
+
+json2table
+
