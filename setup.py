@@ -9,7 +9,7 @@ def readme():
 
 setup(
     name='fortiosapi',
-    version='0.9.91',
+    version='0.1',
     description=('Python modules to interact with fortinet'
                  ' products configuration rest and ssh'),
     long_description=readme(),
@@ -23,9 +23,10 @@ setup(
     ],
     keywords='Fortinet fortigate fortios rest api',
     install_requires=['requests', 'paramiko'],
-    author='Nicolas Thomas',
-    author_email='nthomas@fortinet.com',
-    url='https://github.com/fortinet-solutions-cse/fortiosapi',
+    original_author='Nicolas Thomas',
+    author='Andrew Grabowski',
+    author_email='AndrewGrabowski@gmail.com',
+    url='https://github.com/andrewgrabowski/fortiosapi',
     include_package_data=True,
     packages=['fortiosapi'],
 )
