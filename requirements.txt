@@ -9,7 +9,12 @@ json2table
 
 ###
 #Prereqs to get the script running on a Apache server via PHP
+#   This will display current logged in SSL VPN users.
+#
+# 1. Create folder /var/www/html/fortiosapi
+# 2. Create php file (vpnusers.php) to load up the /var/www/html/fortiosapi/fortiVPNSSL.py script.
 ###
+
 yum install httpd python python2-pip php
 pip install --upgrade pip
 pip install fortipy suds paramiko json2table
