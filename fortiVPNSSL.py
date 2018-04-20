@@ -6,7 +6,7 @@ import json
 from json2table import convert
 
 fg = fortiosapi.FortiOSAPI()
-fg.login( host="417intfw01.trlm.com", username="admintest", password="admintest" )
+fg.login( host="417intfw01.trlm.com", username="###USERNAME###", password="###PASSWORD###" )
 #print ( fg.monitor( path="vpn", name="ssl" ) )
 
 #print json.dumps( (fg.monitor(path="vpn", name="ssl")), indent=2  )
