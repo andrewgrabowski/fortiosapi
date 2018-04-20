@@ -7,3 +7,36 @@ packaging
 
 json2table
 
+###
+#Prereqs to get the script running on a Apache server via PHP
+###
+yum install httpd python python2-pip php
+pip install --upgrade pip
+pip install fortipy suds paramiko json2table
+
+mkdir /var/www/html/fortiosapi
+
+
+vi /etc/httpd/conf/httpd.conf
+
+<IfModule mime_module>
+    #
+    # TypesConfig points to the file containing the list of mappings from
+    # filename extension to MIME-type.
+    #
+    TypesConfig /etc/mime.types
+
+    #
+    # AddType allows you to add to or override the MIME configuration
+    # file specified in TypesConfig for specific file types.
+    #
+    #AddType application/x-gzip .tgz
+
+AddType application/x-httpd-php .php
+AddType application/x-httpd-php .php .phtml
+AddType application/x-httpd-php-source .phps
+AddType application/x-httpd-php .php .htm .html
+
+
+systemctl enable httpd; systemctl restart httpd
+
